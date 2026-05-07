@@ -59,7 +59,7 @@ def _parse_args():
         "--dataset",
         choices=sorted(DATASETS.keys()),
         nargs="+",
-        default=None,
+        default=DATASETS,
         help="Dataset(s) to run. Omit to run all configured datasets.",
     )
     parser.add_argument(
